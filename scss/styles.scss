@@ -1,4 +1,12 @@
 /* ============ Utilities ============ */
+$green: #84bc22;
+$dark: #262a32;
+$blue: #3a5b96;
+$beige: #e8e2d6;
+$grey: #999999;
+$darkgrey: #2d343a;
+$brown: #45413e;
+
 /* ============ /Utilities ============ */
 /* ============ General ============ */
 body {
@@ -9,47 +17,56 @@ i {
   font-size: 1.5rem;
 }
 
-ul li a {
+ul li a{
   text-decoration: none;
   color: grey;
 }
 
-header ul li a {
+header ul li a{
   color: white;
 }
 
-main {
+main{
   margin-top: 10rem;
 }
 
+
+
+
 /* ============ /General ============ */
+
 /* ============ DETAILS ============ */
-.details {
-  background-color: #45413e;
+
+.details{
+  background-color: $brown;
   padding: 50px 0;
-}
-.details .section-text {
-  margin-left: 7%;
+  .section-text{
+    margin-left: 7%;
+  }
 }
 
 /* ============ /DETAILS ============ */
+
 /* ============ BANNER ============ */
-.banner {
+
+.banner{
   position: relative;
   text-align: center;
-}
-.banner img {
-  width: 100%;
-}
-.banner .text-block {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  img{
+    width: 100%;
+  }
+  .text-block{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* ============ /BANNER ============ */
+
+
 /* ============ Navbar ============ */
 .logo_header {
   font-size: 1.8rem;
@@ -67,8 +84,8 @@ main {
   padding: 1rem;
 }
 
-.megamenu {
-  background-color: #262a32;
+.megamenu{
+  background-color: $dark;
 }
 
 /* ============ desktop view ============ */
@@ -96,6 +113,5 @@ main {
 /* ============ mobile view .end// ============ */
 /* ============ /Navbar ============ */
 /*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.scss.map */
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
