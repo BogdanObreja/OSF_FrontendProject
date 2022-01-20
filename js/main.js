@@ -32,3 +32,12 @@ document.addEventListener("DOMContentLoaded", function(){
     // end if innerWidth
     }); 
     // DOMContentLoaded  end
+
+
+    $('.slider').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: '.arrow_prev',
+      nextArrow: '.arrow_next'
+    });

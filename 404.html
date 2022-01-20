@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js" ></script>
+    <script>
+        (async function () {
+            $.get("head.html", function (data) {
+                $("head").append(data);
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+
+    </header>
+        <main>
+            <div class="container">
+                <section>
+                    <div>BreadCrumbs</div>
+                    <div>404</div>
+                </section>
+                <section class="page-404">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/image_404.png" alt="not found">
+                        </div>
+                        <div class="col-8">
+                            <h4>Sorry, this page could not be found</h4>
+                           <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>                       
+                           <br>
+                           <a href="index.html" class="green">Go back to Homepage</a>
+                           <br>
+                           <h4>Search our site</h4>
+                           Search
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

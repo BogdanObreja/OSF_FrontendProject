@@ -1,7 +1,17 @@
 /* ============ Utilities ============ */
+@font-face {
+  font-family: "myriad-pro";
+  src: url("fonts/myriad_pro_regular.tff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* ============ /Utilities ============ */
 /* ============ General ============ */
 body {
+  font-family: "Lato", "myriad-pro", sans-serif;
+}
+
+main {
   background-color: #262a32;
 }
 
@@ -9,17 +19,36 @@ i {
   font-size: 1.5rem;
 }
 
-ul li a {
+header ul li a {
   text-decoration: none;
-  color: grey;
+  color: white;
 }
 
-header ul li a {
-  color: white;
+.nav-link {
+  color: #262a32;
+  font-size: 18px;
+}
+
+.dropdown-grey {
+  color: #b8b7b7;
 }
 
 main {
   margin-top: 10rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #868380;
+}
+footer i {
+  color: #868380;
+}
+footer .contact, footer .contact a {
+  color: #45413e !important;
+}
+footer h6 {
+  color: #45413e;
 }
 
 /* ============ /General ============ */
@@ -33,10 +62,58 @@ main {
 }
 
 /* ============ /DETAILS ============ */
+/* ============ CAROUSEL ============ */
+.carousel-container {
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-item h5 {
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 20%;
+}
+.carousel-item p {
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+.carousel-item button {
+  margin-bottom: 5%;
+  border-radius: 50rem;
+}
+
+.carousel-next {
+  color: #45413e;
+}
+.carousel-next button {
+  margin-bottom: 5%;
+  border-radius: 50rem;
+  border-color: #3a5b96;
+  color: #3a5b96;
+}
+.carousel-next button i {
+  color: #3a5b96;
+  margin-right: 10px;
+}
+
+/* ============ /CAROUSEL ============ */
 /* ============ BANNER ============ */
 .banner {
   position: relative;
   text-align: center;
+}
+.banner h2 {
+  font-size: 90px;
+  font-weight: 900;
+}
+.banner p {
+  font-size: 18px;
 }
 .banner img {
   width: 100%;
@@ -50,15 +127,61 @@ main {
 }
 
 /* ============ /BANNER ============ */
+/* ============ DETAILS ============ */
+.details h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.details p {
+  color: #868380;
+}
+
+/* ============ /DETAILS ============ */
+/* ============ FEATURED ============ */
+.slider p {
+  color: #262a32;
+}
+.slider .green {
+  color: #84bc22;
+  font-weight: 900;
+}
+
+.arrows span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card {
+  border: 0px;
+}
+
+.slick-track {
+  display: flex !important;
+  margin: 0 -20px;
+}
+
+.slick-slide {
+  height: inherit !important;
+  margin: 0 20px;
+}
+
+/* ============ /FEATURED ============ */
 /* ============ Navbar ============ */
+.navbar {
+  z-index: 2000;
+}
+
 .logo_header {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 42px;
+  font-weight: 900;
   margin: 0;
+  margin-bottom: -17px;
   color: #011847;
 }
 
 .logo_p {
+  font-size: 24px;
+  font-weight: 900;
   color: #84bc22;
   margin: 0;
 }
@@ -69,6 +192,19 @@ main {
 
 .megamenu {
   background-color: #262a32;
+}
+
+.notification {
+  position: relative;
+}
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 5px;
+  border-radius: 50%;
+  border: #84bc22 2px solid;
+  color: #84bc22;
 }
 
 /* ============ desktop view ============ */
