@@ -166,6 +166,86 @@ footer{
 
 /* ============ /DETAILS ============ */
 
+/* ============ POPULAR ITEMS ============ */
+
+  .container-popular .row{
+    color: $dark;
+  }
+
+
+/* ============ /POPULAR ITEMS ============ */
+
+.btn-group .green {
+  border-right: 1px solid #dee2e6 !important;
+  color: $green;
+}
+
+.card_hover{
+  position: relative;
+}
+
+.card_hover{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.middle{
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  background-color: #33c879;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card_hover:hover {
+  opacity: 0.3;
+}
+
+.card_hover:hover .middle{
+  opacity: 0.9;
+}
+
+.middle-center {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  i{
+    font-size: 40px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  .heart{
+    color: red; 
+    margin-left: 6px; 
+  }
+  .plus{
+    color: $green;
+    margin-right: 6px;
+  }
+}
+
+
+
+
 /* ============ FEATURED ============ */
 
 .slider{
