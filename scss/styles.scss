@@ -192,12 +192,14 @@ footer{
   backface-visibility: hidden;
 }
 
+.card-gradient{
+  position: relative;
+}
+
 .middle{
   opacity: 0;
   transition: .5s ease;
   position: absolute;
-  top: 50%;
-  left: 50%;
   text-align: center;
   color: white;
   background-color: #33c879;
@@ -209,8 +211,31 @@ footer{
   width: 100%;
 }
 
-.card_hover:hover {
-  opacity: 0.3;
+.green{
+  color: $green;
+}
+
+.load-more{
+  padding: 10px 15%;
+}
+
+.middle-gradient{
+  opacity: 0.9;
+  position: absolute;
+  color: white;
+  background: rgb(203,100,138);
+  background: linear-gradient(176deg, rgba(203,100,138,1) 30%, rgba(98,85,134,1) 100%);  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle-gradient-text{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
 
 .card_hover:hover .middle{
@@ -227,6 +252,10 @@ footer{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  .btn{
+    margin: 0;
+    padding: 0;
+  }
   i{
     font-size: 40px;
     background-color: white;
@@ -239,10 +268,20 @@ footer{
   }
   .plus{
     color: $green;
-    margin-right: 6px;
   }
 }
 
+/* ============ FORM ============ */
+
+form{
+  .btn{
+    background-color: $green;
+    padding: 5px 50px;
+    color: white;
+  }
+}
+
+/* ============ /FORM ============ */
 
 
 

@@ -160,12 +160,14 @@ footer h6 {
   backface-visibility: hidden;
 }
 
+.card-gradient {
+  position: relative;
+}
+
 .middle {
   opacity: 0;
   transition: 0.5s ease;
   position: absolute;
-  top: 50%;
-  left: 50%;
   text-align: center;
   color: white;
   background-color: #33c879;
@@ -177,8 +179,32 @@ footer h6 {
   width: 100%;
 }
 
-.card_hover:hover {
-  opacity: 0.3;
+.green {
+  color: #84bc22;
+}
+
+.load-more {
+  padding: 10px 15%;
+}
+
+.middle-gradient {
+  opacity: 0.9;
+  position: absolute;
+  color: white;
+  background: #cb648a;
+  background: linear-gradient(176deg, #cb648a 30%, #625586 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle-gradient-text {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
 
 .card_hover:hover .middle {
@@ -196,6 +222,10 @@ footer h6 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.middle-center .btn {
+  margin: 0;
+  padding: 0;
+}
 .middle-center i {
   font-size: 40px;
   background-color: white;
@@ -208,9 +238,16 @@ footer h6 {
 }
 .middle-center .plus {
   color: #84bc22;
-  margin-right: 6px;
 }
 
+/* ============ FORM ============ */
+form .btn {
+  background-color: #84bc22;
+  padding: 5px 50px;
+  color: white;
+}
+
+/* ============ /FORM ============ */
 /* ============ FEATURED ============ */
 .slider p {
   color: #262a32;

@@ -1,0 +1,22 @@
+[
+    {
+        "image": "images/items/item9.png",
+        "text": "Item text",
+        "price": "Item price"
+    },
+    {
+        "image": "images/items/item10.png",
+        "text": "Item text",
+        "price": "Item price"
+    },
+    {
+        "image": "images/items/item11.png",
+        "text": "Item text",
+        "price": "Item price"
+    },
+    {
+        "image": "images/items/noimage.png",
+        "text": "Item text",
+        "price": "Item price"
+    }
+]

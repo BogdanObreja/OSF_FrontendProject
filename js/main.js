@@ -41,3 +41,93 @@ document.addEventListener("DOMContentLoaded", function(){
       prevArrow: '.arrow_prev',
       nextArrow: '.arrow_next'
     });
+
+    //Load popular items
+
+    document.getElementById("loadMore").onclick = function()
+    {loadMoreFunction();
+      document.getElementById("loadMore").classList.add('d-none');
+    };
+
+    function loadMoreFunction(){
+
+
+            fetch('../data/items.json')
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (data) {
+              appendItems(data);
+            })
+            .catch(function (err) {
+              console.log('error: ' + err);
+            });
+
+            function appendItems(data) {
+              var mainContainer = document.querySelector("#popular-items > .row");
+              for (var i = 0; i < data.length; i++) {
+                  var div = document.createElement("div");
+                  div.classList.add("col")
+                  div.innerHTML = 
+                  ` <div class="card card_hover h-100">
+                  <img src="${data[i].image}" class="card-img-top img-fluid" alt="item 1">
+                  <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <p class="card-text">${data[i].text}</p>
+                    <p class="card-text price">${data[i].price}</p>
+                      <div class="middle">
+                      <div class="middle-center">
+                                <span class="btn plus"><i class="add-cart fas fa-plus "></i></span>
+                                <span class="btn heart"><i class="add-wish fas fa-heart "></i></span>
+                      </div>
+                      </div>
+                  </div>
+                </div> `
+                  ;
+                  mainContainer.appendChild(div);
+              }
+          }
+        }
+
+//ADD TO CART FUNCTION
+
+
+let buttons = document.querySelector('.container-popular');
+
+buttons.addEventListener('click', (event)=>{
+  if(event.target.classList.contains('add-cart')){
+    cartNumbers();
+  }else if(event.target.classList.contains('add-wish')){
+    cartWishes();
+  }
+})
+
+
+// let carts = document.querySelectorAll('.add-cart');
+let cartItems = 0;
+
+// for(let i=0; i<carts.length; i++){
+//   carts[i].addEventListener('click', ()=>{
+//     cartNumbers();
+//   })
+// }
+
+function cartNumbers(){
+  cartItems++;
+  document.querySelector('.cart').innerHTML = cartItems;
+}
+
+//ADD TO WISH FUNCTION
+
+// let wishes = document.querySelectorAll('.add-wish');
+let wishItems = 0;
+
+// for(let i=0; i<wishes.length; i++){
+//   wishes[i].addEventListener('click', ()=>{
+//     cartWishes();
+//   })
+// }
+
+function cartWishes(){
+  wishItems++;
+  document.querySelector('.wish').innerHTML = wishItems;
+}
