@@ -102,14 +102,9 @@ buttons.addEventListener('click', (event)=>{
 })
 
 
-// let carts = document.querySelectorAll('.add-cart');
 let cartItems = 0;
 
-// for(let i=0; i<carts.length; i++){
-//   carts[i].addEventListener('click', ()=>{
-//     cartNumbers();
-//   })
-// }
+
 
 function cartNumbers(){
   cartItems++;
@@ -118,16 +113,30 @@ function cartNumbers(){
 
 //ADD TO WISH FUNCTION
 
-// let wishes = document.querySelectorAll('.add-wish');
 let wishItems = 0;
 
-// for(let i=0; i<wishes.length; i++){
-//   wishes[i].addEventListener('click', ()=>{
-//     cartWishes();
-//   })
-// }
 
 function cartWishes(){
   wishItems++;
   document.querySelector('.wish').innerHTML = wishItems;
 }
+
+
+// INJECT CURRENT YEAR
+
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById('current_year').innerHTML = year;
+
+// SHOW HIDE PASSWORD
+
+const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});

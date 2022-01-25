@@ -23,6 +23,7 @@ body {
 
 main{
   background-color: $dark;
+  margin-top: 7rem;
 }
 
 i {
@@ -44,9 +45,6 @@ header ul li a{
   color: #b8b7b7;
 }
 
-main{
-  margin-top: 10rem;
-}
 
 footer{
   ul li a{
@@ -279,6 +277,10 @@ form{
     padding: 5px 50px;
     color: white;
   }
+  form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
 }
 
 /* ============ /FORM ============ */
@@ -392,3 +394,62 @@ form{
 
 /*# sourceMappingURL=styles.scss.map */
 
+// ================ 404 ====================
+ 
+  .headline-404, .headline-popular{
+    overflow: hidden;
+  }
+
+  #main-second{
+    background-color: #f1edea;
+    padding: 5rem;
+    overflow: hidden;
+   
+    h2{
+      font-weight: 900;
+      font-size: 30px;
+    }
+    h1{
+      font-weight: 900;
+      font-size: 60px;
+      color: $darkgrey;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  
+  #page-404{
+    background-color: white;
+    padding: 5rem 0;
+  }
+  .sorry{
+    padding: 0 10%;
+    
+  }
+
+
+.headlines span {
+    display: inline-block;
+    position: relative;  
+    
+}
+.headlines span:before,
+.headlines span:after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  border-bottom: 3px groove #e5e2df4b;
+  top: 0;
+  width: 600px;
+}
+.headlines span:before {
+  right: 100%;
+  margin-right: 30px;
+}
+.headlines span:after {
+  left: 100%;
+  margin-left: 30px;
+}
+
+// ================ /404 ====================

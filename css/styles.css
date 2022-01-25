@@ -13,6 +13,7 @@ body {
 
 main {
   background-color: #262a32;
+  margin-top: 7rem;
 }
 
 i {
@@ -31,10 +32,6 @@ header ul li a {
 
 .dropdown-grey {
   color: #b8b7b7;
-}
-
-main {
-  margin-top: 10rem;
 }
 
 footer ul li a {
@@ -246,6 +243,10 @@ form .btn {
   padding: 5px 50px;
   color: white;
 }
+form form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
 
 /* ============ /FORM ============ */
 /* ============ FEATURED ============ */
@@ -344,5 +345,60 @@ form .btn {
 /* ============ /Navbar ============ */
 /*# sourceMappingURL=styles.css.map */
 /*# sourceMappingURL=styles.scss.map */
+.headline-404, .headline-popular {
+  overflow: hidden;
+}
+
+#main-second {
+  background-color: #f1edea;
+  padding: 5rem;
+  overflow: hidden;
+}
+#main-second h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
+#main-second h1 {
+  font-weight: 900;
+  font-size: 60px;
+  color: #2d343a;
+}
+#main-second a {
+  text-decoration: none;
+}
+
+#page-404 {
+  background-color: white;
+  padding: 5rem 0;
+}
+
+.sorry {
+  padding: 0 10%;
+}
+
+.headlines span {
+  display: inline-block;
+  position: relative;
+}
+
+.headlines span:before,
+.headlines span:after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  border-bottom: 3px groove #e5e2df4b;
+  top: 0;
+  width: 600px;
+}
+
+.headlines span:before {
+  right: 100%;
+  margin-right: 30px;
+}
+
+.headlines span:after {
+  left: 100%;
+  margin-left: 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */

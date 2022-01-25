@@ -1,22 +1,22 @@
 [
     {
         "image": "images/items/item9.png",
-        "text": "Item text",
-        "price": "Item price"
+        "text": "Activate Facial Mask and <br> Charcoal Soap ",
+        "price": "$129.55"
     },
     {
         "image": "images/items/item10.png",
-        "text": "Item text",
-        "price": "Item price"
+        "text": "Vitra Cork Stool B, Cork - Design Within Reach",
+        "price": "$299.99"
     },
     {
         "image": "images/items/item11.png",
-        "text": "Item text",
-        "price": "Item price"
+        "text": "Kristina Dam Oak Table With White Marble Top",
+        "price": "$799.55"
     },
     {
         "image": "images/items/noimage.png",
-        "text": "Item text",
-        "price": "Item price"
+        "text": "CH445 Wing Chair on <br> SUITE NY",
+        "price": "$330.55"
     }
 ]
