@@ -140,3 +140,10 @@ const togglePassword = document.querySelector('#togglePassword');
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
+
+//Product page
+
+// $('#myTab a').on('click', function (e) {
+//   e.preventDefault()
+//   $(this).tab('show')
+// })

@@ -351,7 +351,7 @@ form form i {
 
 #main-second {
   background-color: #f1edea;
-  padding: 5rem;
+  padding: 5rem 0;
   overflow: hidden;
 }
 #main-second h2 {
@@ -399,6 +399,92 @@ form form i {
 .headlines span:after {
   left: 100%;
   margin-left: 30px;
+}
+
+#main-category, #main-product {
+  padding-top: 5rem;
+  background-color: #f1edea;
+  overflow: hidden;
+  margin-bottom: -25px;
+  color: #45413e;
+}
+#main-category a, #main-product a {
+  text-decoration: none;
+}
+
+select.form-control {
+  -webkit-appearance: menulist;
+}
+
+.form-check-input:focus {
+  border: 2px solid black;
+  box-shadow: none;
+}
+
+.form-check {
+  margin: 0;
+}
+.form-check .white {
+  background: white;
+}
+.form-check .white:checked {
+  background: white;
+}
+.form-check .cyan {
+  background: cyan;
+}
+.form-check .cyan:checked {
+  background: cyan;
+}
+.form-check .black {
+  background: black;
+}
+.form-check .black:checked {
+  background: black;
+}
+.form-check .green {
+  background: green;
+}
+.form-check .green:checked {
+  background: green;
+}
+.form-check .blue {
+  background: blue;
+}
+.form-check .blue:checked {
+  background: blue;
+}
+.form-check .orange {
+  background: orange;
+}
+.form-check .orange:checked {
+  background: orange;
+}
+.form-check .red {
+  background: red;
+}
+.form-check .red:checked {
+  background: red;
+}
+.form-check .beige {
+  background: beige;
+}
+.form-check .beige:checked {
+  background: beige;
+}
+
+.form-check-input {
+  padding: 0;
+}
+
+.load-more-second {
+  background: #84bc22;
+  padding: 10px 15px;
+}
+
+.featured-second {
+  background-color: #262a32;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

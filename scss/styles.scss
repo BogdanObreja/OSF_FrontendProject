@@ -402,7 +402,7 @@ form{
 
   #main-second{
     background-color: #f1edea;
-    padding: 5rem;
+    padding: 5rem 0;
     overflow: hidden;
    
     h2{
@@ -453,3 +453,105 @@ form{
 }
 
 // ================ /404 ====================
+
+// ================ Services ====================
+
+#main-category, #main-product{
+  padding-top: 5rem;
+  background-color: #f1edea;
+  overflow: hidden;
+  margin-bottom: -25px;
+  a{
+    text-decoration: none;
+  }
+  color: $brown;
+}
+
+select.form-control {
+  -webkit-appearance: menulist;
+}
+
+.form-check-input:focus{
+  border: 2px solid black;
+    box-shadow: none;
+}
+
+.form-check{
+  margin: 0;
+  .white{
+    background: white;
+  }
+  .white:checked{
+    background: white;
+  }
+  .cyan{
+    background: cyan;
+  }
+  .cyan:checked{
+    background: cyan;
+  }
+  
+  .black{
+    background: black;
+  }
+  .black:checked{
+    background: black;
+  }
+  
+  .green{
+    background: green;
+  }
+  .green:checked{
+    background: green;
+  }
+  
+  .blue{
+    background: blue;
+  }
+  .blue:checked{
+    background: blue;
+  }
+  
+  .orange{
+    background: orange;
+  }
+  .orange:checked{
+    background: orange;
+  }
+  
+  .red{
+    background: red;
+  }
+  .red:checked{
+    background: red;
+  }
+  
+  .beige{
+    background: beige;
+  }
+  .beige:checked{
+    background: beige;
+  }
+}
+
+.form-check-input{
+  padding: 0;
+}
+
+.load-more-second{
+  background: $green;
+  padding: 10px 15px;
+}
+
+.featured-second{
+  background-color: $dark;
+  padding: 3rem 0;
+}
+
+// ================ /Services ====================
+
+// ================ PRODUCT ====================
+
+  
+
+// ================ /PRODUCT ====================
