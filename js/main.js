@@ -143,7 +143,18 @@ const togglePassword = document.querySelector('#togglePassword');
 
 //Product page
 
-// $('#myTab a').on('click', function (e) {
-//   e.preventDefault()
-//   $(this).tab('show')
-// })
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMoreLink");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}

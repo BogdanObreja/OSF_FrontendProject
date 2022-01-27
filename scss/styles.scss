@@ -554,4 +554,30 @@ select.form-control {
 
   
 
+  .nav-details{
+    li{
+      margin-bottom: 10px;
+    }
+    a{
+      color: grey;
+      margin: 20px;
+      
+    }
+    a.active{
+      background-color: $dark;
+      color: white;
+      padding: 20px 20px;
+      margin: 0 10px;
+    }
+  }
+
+  .tab-details{
+    background-color: $dark;
+    color: white;
+    width: 100%;
+    padding: 5rem;
+  }
+
+  #more {display: none;}
+
 // ================ /PRODUCT ====================

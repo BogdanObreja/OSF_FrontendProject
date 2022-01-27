@@ -487,4 +487,29 @@ select.form-control {
   padding: 3rem 0;
 }
 
+.nav-details li {
+  margin-bottom: 10px;
+}
+.nav-details a {
+  color: grey;
+  margin: 20px;
+}
+.nav-details a.active {
+  background-color: #262a32;
+  color: white;
+  padding: 20px 20px;
+  margin: 0 10px;
+}
+
+.tab-details {
+  background-color: #262a32;
+  color: white;
+  width: 100%;
+  padding: 5rem;
+}
+
+#more {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
