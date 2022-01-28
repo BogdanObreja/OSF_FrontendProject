@@ -512,4 +512,55 @@ select.form-control {
   display: none;
 }
 
+.anchor {
+  display: block;
+  height: 15vh;
+  /*same height as header*/
+  margin-top: -15vh;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+select {
+  border-color: #e8e2d6 !important;
+}
+
+.nice-number {
+  margin-right: 10px;
+}
+.nice-number button {
+  border: 1px solid #e8e2d6;
+  background-color: white;
+}
+.nice-number input {
+  border: 1px solid #e8e2d6;
+  border-right: none;
+  border-left: none;
+  width: 5ch !important;
+}
+.nice-number :first-child {
+  border-right: none;
+  border-radius: 50rem 0 0 50rem;
+}
+.nice-number :last-child {
+  border-left: none;
+  border-radius: 0 50rem 50rem 0;
+}
+
+#consent-popup {
+  position: fixed;
+  bottom: 20%;
+  width: 80vw;
+  margin: auto;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  padding: 2rem 8rem;
+  background-color: #fff;
+  transition: opacity 1s ease;
+}
+#consent-popup.hidden {
+  opacity: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
